@@ -12,7 +12,7 @@ before_install:
   - git clone https://github.com/wikimedia/pywikibot-core
   - mkdir -p pywikibot-core/scripts/i18n
   - touch pywikibot-core/scripts/i18n/__init__.py
-  - for item in *; do if [[ -d "$item" ]]; then mv "$item" pywikibot-code/scripts/i18n; fi; done
+  - for item in *; do if [[ -d "$item" ]]; then cp -rp "$item" pywikibot-core/scripts/i18n; fi; done
 
 install:
   - pip install nose requests
