@@ -15,7 +15,7 @@ before_install:
   - for item in *; do if [[ -d "$item" ]]; then cp -rp "$item" pywikibot-core/scripts/i18n; fi; done
 
 install:
-  - pip install nose requests
+  - pip install six nose requests
 
 script:
   - cd pywikibot-core
