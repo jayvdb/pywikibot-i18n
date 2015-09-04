@@ -6,7 +6,7 @@ python:
   - '3.4'
 
 env:
-  - PYWIKIBOT2_NO_CONFIG=2
+  - PYWIKIBOT2_NO_USER_CONFIG=2
 
 before_install:
   - git clone https://github.com/wikimedia/pywikibot-core
